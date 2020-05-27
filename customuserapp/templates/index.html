@@ -1,1 +1,12 @@
 <h1>Custom User</h1>
+<br>
+{% if user.is_authenticated %}
+  {{ user.username }}
+{% endif %}
+
+<h2>
+  <a href='signup/'>Sign up here!</a>
+</h2>
+<br>
+
+<a href="logout/">Logout here</a>
