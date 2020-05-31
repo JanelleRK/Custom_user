@@ -20,6 +20,8 @@ def sign_up_view(request):
 				username=data['username'],
 				email=data['email'],
 				display_name=data['display_name'],
+				password=data['password'],
+				age = data['age']
 			)
 			return HttpResponseRedirect(reverse('homepage'))
 

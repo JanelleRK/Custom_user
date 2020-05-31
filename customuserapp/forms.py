@@ -8,5 +8,6 @@ class CreateCustomUserForm(forms.ModelForm):
 		fields = [
 			'username',
 			'email',
-            'display_name'
+            'display_name',
+			'age'
 		]
