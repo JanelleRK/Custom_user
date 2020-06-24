@@ -7,8 +7,8 @@ class CreateCustomUserForm(forms.ModelForm):
 		model = MyUser
 		fields = [
 			'username',
-			'email',
             'display_name',
+			'password',
 		]
 
 

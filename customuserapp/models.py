@@ -4,10 +4,6 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class MyUser(AbstractUser):
-	display_name = models.CharField(max_length=50)
-	password = models.CharField(max_length=25)
+	display_name = models.CharField(max_length=50, unique=True)
 
 	# add additional fields in here
-
-	def __str__(self):
-		return self.username
