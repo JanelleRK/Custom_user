@@ -9,5 +9,9 @@ class CreateCustomUserForm(forms.ModelForm):
 			'username',
 			'email',
             'display_name',
-			'age'
 		]
+
+
+class LoginForm(forms.Form):
+	username = forms.CharField(max_length=50)
+	password = forms.CharField(widget=forms.PasswordInput())
