@@ -6,9 +6,8 @@
 
 {% if user.is_authenticated %}
 <h2>Homepage of: {{ user.username }} </h2>
-<h2>Currently logged in as:  {{ user.display_name }} </h2>
-
+<h2>Currently logged in as:  {{ user.username }} </h2>
+<h3>settings.AUTH_USER_MODEL: {{settings}}</h3>
 
 <a href="logout/">Logout here</a>
 {% endif %}
-
